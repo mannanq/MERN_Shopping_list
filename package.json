@@ -1,0 +1,21 @@
+{
+    "name": "mern",
+    "version": "1.0.0",
+    "description": "Shopping List built with the MERN stack",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Mannan Qazi",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "concurrently": "^4.1.0",
+        "express": "^4.16.4",
+        "mongoose": "^5.5.7"
+    }
+}
